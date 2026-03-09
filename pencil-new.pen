@@ -1,0 +1,1681 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "0KJt0",
+      "x": 0,
+      "y": 0,
+      "name": "ETF Dashboard",
+      "width": 1440,
+      "fill": "#FAFAFA",
+      "layout": "vertical",
+      "padding": 48,
+      "children": [
+        {
+          "type": "frame",
+          "id": "xeZZW",
+          "name": "header",
+          "width": "fill_container",
+          "padding": [
+            0,
+            0,
+            32,
+            0
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "rfI1t",
+              "name": "titleGroup",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dbI0y",
+                  "name": "titleText",
+                  "fill": "#000000",
+                  "content": "US ETF Analysis",
+                  "fontFamily": "Sora",
+                  "fontSize": 48,
+                  "fontWeight": "600",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "ogiRe",
+                  "name": "subtitle",
+                  "fill": "#5E5E5E",
+                  "content": "Track and analyze US Exchange-Traded Funds",
+                  "fontFamily": "IBM Plex Mono",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xODwI",
+              "name": "actions",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o9q48",
+                  "name": "themeBtn",
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "VszOW",
+                      "name": "themeIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "moon",
+                      "iconFontFamily": "lucide",
+                      "fill": "#5E5E5E"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mFgIX",
+                      "name": "themeText",
+                      "fill": "#5E5E5E",
+                      "content": "Dark",
+                      "fontFamily": "Sora",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "t2jfv",
+                  "name": "refreshBtn",
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "QREP1",
+                      "name": "refreshIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "refresh-cw",
+                      "iconFontFamily": "lucide",
+                      "fill": "#5E5E5E"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MGXPD",
+                      "name": "refreshText",
+                      "fill": "#5E5E5E",
+                      "content": "Refresh",
+                      "fontFamily": "Sora",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mfUmB",
+                  "name": "poolBadge",
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "9q6A4",
+                      "name": "poolIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "layers",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FAFAFA"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x1Hc0",
+                      "name": "poolText",
+                      "fill": "#FAFAFA",
+                      "content": "ETF Pool: 30",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IeCy1",
+          "name": "controls",
+          "width": "fill_container",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "yRWrD",
+              "name": "searchBox",
+              "width": 280,
+              "gap": 8,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "VW4He",
+                  "name": "searchIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "search",
+                  "iconFontFamily": "lucide",
+                  "fill": "#999999"
+                },
+                {
+                  "type": "text",
+                  "id": "MPuck",
+                  "name": "searchPlaceholder",
+                  "fill": "#999999",
+                  "content": "Search ETF...",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "coGeB",
+              "name": "sectorFilter",
+              "width": 180,
+              "gap": 8,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "zdfPE",
+                  "name": "sectorIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "filter",
+                  "iconFontFamily": "lucide",
+                  "fill": "#999999"
+                },
+                {
+                  "type": "text",
+                  "id": "FjojE",
+                  "name": "sectorText",
+                  "fill": "#000000",
+                  "content": "All Sectors",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IXgv6",
+              "name": "sortDropdown",
+              "width": 160,
+              "gap": 8,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "N3UO1",
+                  "name": "sortIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "arrow-up-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "#999999"
+                },
+                {
+                  "type": "text",
+                  "id": "IGR7t",
+                  "name": "sortText",
+                  "fill": "#000000",
+                  "content": "Sort by",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Plrhr",
+              "name": "favBtn",
+              "gap": 8,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "J0JlY",
+                  "name": "favIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "star",
+                  "iconFontFamily": "lucide",
+                  "fill": "#DC2626"
+                },
+                {
+                  "type": "text",
+                  "id": "RE5Um",
+                  "name": "favText",
+                  "fill": "#000000",
+                  "content": "Favorites",
+                  "fontFamily": "Sora",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i9Mfj",
+              "name": "portBtn",
+              "gap": 8,
+              "padding": [
+                10,
+                16
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "EZe2F",
+                  "name": "portIcon",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "trending-up",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FAFAFA"
+                },
+                {
+                  "type": "text",
+                  "id": "VqVkt",
+                  "name": "portText",
+                  "fill": "#FAFAFA",
+                  "content": "Portfolio",
+                  "fontFamily": "Sora",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "wl7Ya",
+          "name": "resultsCount",
+          "fill": "#5E5E5E",
+          "content": "Showing 30 of 30 ETFs",
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "G0KBd",
+          "name": "grid",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "JBBDf",
+              "name": "card1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "9O5db",
+                  "name": "card1Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2xuGn",
+                      "name": "card1Rank",
+                      "fill": "#999999",
+                      "content": "#1",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "s4ggq",
+                      "name": "card1Symbol",
+                      "fill": "#000000",
+                      "content": "SPY",
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "dQDJ0",
+                      "name": "card1Fav",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#999999"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "vaQjd",
+                  "name": "card1Name",
+                  "fill": "#5E5E5E",
+                  "content": "SPDR S&P 500 ETF Trust",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ynNRo",
+                  "name": "card1Price",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "urNiB",
+                      "name": "card1PriceMain",
+                      "fill": "#000000",
+                      "content": "$478.52",
+                      "fontFamily": "Sora",
+                      "fontSize": 28,
+                      "fontWeight": "600",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PJoG5",
+                      "name": "card1Change",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "O1UEM",
+                          "name": "card1Arrow",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#22C55E"
+                        },
+                        {
+                          "type": "text",
+                          "id": "L3UVd",
+                          "name": "card1ChangeText",
+                          "fill": "#22C55E",
+                          "content": "+2.34 (+0.49%)",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "72PW4",
+                  "name": "card1Details",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aDJss",
+                      "name": "det1Row1",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1dAZn",
+                          "name": "det1Label1",
+                          "fill": "#999999",
+                          "content": "Sector:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wNiKh",
+                          "name": "det1Val1",
+                          "fill": "#000000",
+                          "content": "Large Blend",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hjWSQ",
+                      "name": "det1Row2",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5vkYh",
+                          "name": "det1Label2",
+                          "fill": "#999999",
+                          "content": "Expense:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dtZ1m",
+                          "name": "det1Val2",
+                          "fill": "#000000",
+                          "content": "0.09%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8f26e",
+                      "name": "det1Row3",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f3Hkp",
+                          "name": "det1Label3",
+                          "fill": "#999999",
+                          "content": "Dividend:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "THx7i",
+                          "name": "det1Val3",
+                          "fill": "#000000",
+                          "content": "1.42%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tn6aX",
+                      "name": "det1Row4",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pmfmH",
+                          "name": "det1Label4",
+                          "fill": "#999999",
+                          "content": "1Y Return:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NMaGm",
+                          "name": "det1Val4",
+                          "fill": "#22C55E",
+                          "content": "+24.5%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AFUKl",
+                  "name": "card1Btn",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VjkaT",
+                      "name": "card1SimBtn",
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "rGV4V",
+                          "name": "card1SimIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "bar-chart-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DC2626"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7l04a",
+                          "name": "card1SimText",
+                          "fill": "#DC2626",
+                          "content": "Simulate",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "d6A5J",
+              "name": "card2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XCIDL",
+                  "name": "card2Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A2qN1",
+                      "name": "card2Rank",
+                      "fill": "#999999",
+                      "content": "#2",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iMQbC",
+                      "name": "card2Symbol",
+                      "fill": "#000000",
+                      "content": "QQQ",
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "kKKUl",
+                      "name": "card2Fav",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#DC2626"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "zGbqY",
+                  "name": "card2Name",
+                  "fill": "#5E5E5E",
+                  "content": "Invesco QQQ Trust",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "IxAuy",
+                  "name": "card2PriceMain",
+                  "fill": "#000000",
+                  "content": "$412.18",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "600",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "frame",
+                  "id": "AeWxk",
+                  "name": "card2Change",
+                  "gap": 4,
+                  "padding": [
+                    4,
+                    0,
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "bLeTo",
+                      "name": "card2Arrow",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "arrow-up-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#22C55E"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yyagb",
+                      "name": "card2ChangeText",
+                      "fill": "#22C55E",
+                      "content": "+3.12 (+0.76%)",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zCC9f",
+                  "name": "card2Details",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UyAOZ",
+                      "name": "card2Row1",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FvTNN",
+                          "fill": "#999999",
+                          "content": "Sector:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cIBbL",
+                          "fill": "#000000",
+                          "content": "Large Growth",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y1H8G",
+                      "name": "card2Row2",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gUxb3",
+                          "fill": "#999999",
+                          "content": "Expense:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cekiZ",
+                          "fill": "#000000",
+                          "content": "0.20%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P4bLT",
+                  "name": "card2Btn",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7SIV7",
+                      "name": "card2SimBtn",
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "ccoR1",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "bar-chart-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DC2626"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YNwRd",
+                          "fill": "#DC2626",
+                          "content": "Simulate",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jV6t2",
+              "name": "card3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yWnPZ",
+                  "name": "card3Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NLfEo",
+                      "name": "card3Rank",
+                      "fill": "#999999",
+                      "content": "#3",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Lhpxw",
+                      "name": "card3Symbol",
+                      "fill": "#000000",
+                      "content": "VOO",
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "4oTiI",
+                      "name": "card3Fav",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#999999"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Q4pnc",
+                  "name": "card3Name",
+                  "fill": "#5E5E5E",
+                  "content": "Vanguard S&P 500 ETF",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dvJAg",
+                  "name": "card3PriceMain",
+                  "fill": "#000000",
+                  "content": "$456.89",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "600",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "frame",
+                  "id": "C8JFk",
+                  "name": "card3Change",
+                  "gap": 4,
+                  "padding": [
+                    4,
+                    0,
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "X0l9l",
+                      "name": "card3Arrow",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "arrow-down-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#DC2626"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EevOE",
+                      "name": "card3ChangeText",
+                      "fill": "#DC2626",
+                      "content": "-1.23 (-0.27%)",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7z55n",
+                  "name": "card3Details",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hcXtm",
+                      "name": "card3Row1",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o8bMg",
+                          "fill": "#999999",
+                          "content": "Sector:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yd4GX",
+                          "fill": "#000000",
+                          "content": "Large Blend",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yxKrV",
+                      "name": "card3Row2",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Y0SLY",
+                          "fill": "#999999",
+                          "content": "Expense:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aCSVj",
+                          "fill": "#000000",
+                          "content": "0.03%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D1tCL",
+                  "name": "card3Btn",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gI4RA",
+                      "name": "card3SimBtn",
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "RiMYG",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "bar-chart-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DC2626"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GLcMd",
+                          "fill": "#DC2626",
+                          "content": "Simulate",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A1u1M",
+              "name": "card4",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RehlB",
+                  "name": "card4Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QdCMx",
+                      "fill": "#999999",
+                      "content": "#4",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hvItI",
+                      "fill": "#000000",
+                      "content": "VTI",
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "TzCZg",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#999999"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "xIOva",
+                  "fill": "#5E5E5E",
+                  "content": "Vanguard Total Stock Market",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "MGST7",
+                  "fill": "#000000",
+                  "content": "$245.67",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "600",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "frame",
+                  "id": "LZDG1",
+                  "name": "card4Change",
+                  "gap": 4,
+                  "padding": [
+                    4,
+                    0,
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Lcr8Z",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "arrow-up-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#22C55E"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VnxDG",
+                      "fill": "#22C55E",
+                      "content": "+1.89 (+0.78%)",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "maU67",
+                  "name": "card4Details",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "O8vgD",
+                      "name": "card4Row1",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Zd7gR",
+                          "fill": "#999999",
+                          "content": "Sector:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uJgOL",
+                          "fill": "#000000",
+                          "content": "Large Blend",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DfESG",
+                      "name": "card4Row2",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nd8Nx",
+                          "fill": "#999999",
+                          "content": "Expense:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AQXBk",
+                          "fill": "#000000",
+                          "content": "0.03%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OG6FK",
+                  "name": "card4Btn",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u21vw",
+                      "name": "card4SimBtn",
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "fXuIZ",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "bar-chart",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DC2626"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uWFt1",
+                          "fill": "#DC2626",
+                          "content": "Simulate",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I6fn7",
+              "name": "card5",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yZ1yg",
+                  "name": "card5Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dlF0b",
+                      "fill": "#999999",
+                      "content": "#5",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eEU2S",
+                      "fill": "#000000",
+                      "content": "IVV",
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "9W7Ik",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#DC2626"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "2zCYa",
+                  "fill": "#5E5E5E",
+                  "content": "iShares Core S&P 500 ETF",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "R3Fbp",
+                  "fill": "#000000",
+                  "content": "$472.34",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "600",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "frame",
+                  "id": "XFtrX",
+                  "name": "card5Change",
+                  "gap": 4,
+                  "padding": [
+                    4,
+                    0,
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "4Vs2q",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "arrow-up-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#22C55E"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Fvmit",
+                      "fill": "#22C55E",
+                      "content": "+1.56 (+0.33%)",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ID3uy",
+                  "name": "card5Details",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TEU4K",
+                      "name": "card5Row1",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cRMKG",
+                          "fill": "#999999",
+                          "content": "Sector:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GjnTy",
+                          "fill": "#000000",
+                          "content": "Large Blend",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SXETT",
+                      "name": "card5Row2",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I1Smh",
+                          "fill": "#999999",
+                          "content": "Expense:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "rQkY2",
+                          "fill": "#000000",
+                          "content": "0.03%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YX6Mt",
+                  "name": "card5Btn",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wSaKD",
+                      "name": "card5SimBtn",
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "uWFNg",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "bar-chart",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DC2626"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xH5Or",
+                          "fill": "#DC2626",
+                          "content": "Simulate",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "reY4f",
+              "name": "card6",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ukiEn",
+                  "name": "card6Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6nKoX",
+                      "fill": "#999999",
+                      "content": "#6",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dwoq2",
+                      "fill": "#000000",
+                      "content": "ARKK",
+                      "fontFamily": "Sora",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "bi7m4",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "star",
+                      "iconFontFamily": "lucide",
+                      "fill": "#999999"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "MmzQb",
+                  "fill": "#5E5E5E",
+                  "content": "ARK Innovation ETF",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EfLX1",
+                  "fill": "#000000",
+                  "content": "$48.92",
+                  "fontFamily": "Sora",
+                  "fontSize": 28,
+                  "fontWeight": "600",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "frame",
+                  "id": "gvV1M",
+                  "name": "card6Change",
+                  "gap": 4,
+                  "padding": [
+                    4,
+                    0,
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "rkJqY",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "arrow-down-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#DC2626"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ze7pC",
+                      "fill": "#DC2626",
+                      "content": "-2.45 (-4.77%)",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1O42G",
+                  "name": "card6Details",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "b2aOM",
+                      "name": "card6Row1",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jpuuM",
+                          "fill": "#999999",
+                          "content": "Sector:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KQtYj",
+                          "fill": "#000000",
+                          "content": "Mid-Cap Growth",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ORt3K",
+                      "name": "card6Row2",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ttnjd",
+                          "fill": "#999999",
+                          "content": "Expense:",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "5zDjG",
+                          "fill": "#000000",
+                          "content": "0.75%",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7AOGN",
+                  "name": "card6Btn",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7a9GW",
+                      "name": "card6SimBtn",
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "ojrFT",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "bar-chart",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DC2626"
+                        },
+                        {
+                          "type": "text",
+                          "id": "G5U5G",
+                          "fill": "#DC2626",
+                          "content": "Simulate",
+                          "fontFamily": "Sora",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
